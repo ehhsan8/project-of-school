@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #2e7d32;
-    --secondary-color: #1b5e20;
-    --accent-color: #ffd700;
+    --primary: #2e7d32;
+    --secondary: #1b5e20;
+    --accent: #ffd700;
 }
 
 body {
@@ -10,48 +10,91 @@ body {
     padding: 0;
     line-height: 1.6;
     direction: rtl;
+    font-size: 16px;
 }
 
-/* الهيدر المشترك */
+/* الهيدر */
 header {
-    background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(27, 94, 32, 0.9));
+    background: var(--primary);
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 nav {
-    background: var(--secondary-color);
+    background: var(--secondary);
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1.5rem;
-    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
 }
 
-/* المحتوى الرئيسي */
+/* المحتوى */
 .main-content {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* بطاقات العروض */
-.offer-card {
+/* بطاقات */
+.card {
     background: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 1.5rem;
     margin: 1rem 0;
 }
 
-/* نماذج الاتصال */
-.contact-form {
+/* النماذج */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* شريط الأدوات */
+.accessibility-toolbar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.accessibility-toolbar button {
     background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* التباين العالي */
+.high-contrast {
+    background: #000 !important;
+    color: #ff0 !important;
+}
+
+.high-contrast nav a {
+    color: #ff0 !important;
 }
