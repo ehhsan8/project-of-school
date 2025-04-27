@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #1b5e20;
+    --accent-color: #ffd700;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* الهيدر المشترك */
+header {
+    background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(27, 94, 32, 0.9));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav {
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* المحتوى الرئيسي */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* بطاقات العروض */
+.offer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* نماذج الاتصال */
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
